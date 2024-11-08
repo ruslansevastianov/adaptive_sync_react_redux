@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.customerInfo-block{    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infoBlockModal{
+    width: 350px;
+    height: 500px;
+    background-color: rgb(199, 199, 199);
+    padding: 0 20px;
+    border-radius: 5px;
+}
+.info-header{
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.closeInfoBlock{
+    width: 20px;
+}
+.info-block{
+    height: 70%;
+    margin-top: 50px;
+}
+.info-block div{
+    height: 40px;
+    text-align: left;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1339px){
+
+    .customerInfo-block{
+        width: 350px;
+        height: 500px;
+        background-color: bisque;
+        position: absolute;
+        top: 12%;
+        left: 30%;
+        padding: 0 20px;
+        border-radius: 5px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+    .customerInfo-block{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }   
+    .info-header{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+    .customerInfo-block{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+    .info-header{
+        width: 90%;
+    }  
+}
+
+@media screen and (min-width: 320px) and (max-width: 479px){
+
+    .customerInfo-block{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0 20px;
+    }
+    .info-header{
+        width: 90%;
+    }  
+}
